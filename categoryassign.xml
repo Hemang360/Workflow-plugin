@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="workflow" method="upgrade">
+    <name>plg_workflow_categoryassign</name>
+    <author>Your Name</author>
+    <creationDate>June 2023</creationDate>
+    <copyright>(C) 2023 Open Source Matters, Inc.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>author@example.com</authorEmail>
+    <authorUrl>www.example.com</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_WORKFLOW_CATEGORYASSIGN_XML_DESCRIPTION</description>
+    <namespace path="src">Joomla\Plugin\Workflow\CategoryAssign</namespace>
+    <files>
+        <filename plugin="categoryassign">categoryassign.php</filename>
+        <folder>forms</folder>
+        <folder>language</folder>
+        <folder>services</folder>
+        <folder>src</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="enabled_contexts"
+                    type="list"
+                    label="PLG_WORKFLOW_CATEGORYASSIGN_ENABLED_CONTEXTS_LABEL"
+                    description="PLG_WORKFLOW_CATEGORYASSIGN_ENABLED_CONTEXTS_DESC"
+                    default="com_content.article"
+                    multiple="true"
+                >
+                    <option value="com_content.article">PLG_WORKFLOW_CATEGORYASSIGN_COM_CONTENT_ARTICLE</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension> 
